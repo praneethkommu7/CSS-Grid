@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Tutorial</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <style>
+    .container {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      /* old syntax */
+      /* grid-row-gap: 20px;
+      grid-column-gap: 40px;
+      grid-gap: rows columns;
+      grid-gap: 20px 40px; */
+
+      /* New Syntax */
+      row-gap: 20px;
+      column-gap: 40px;
+      gap: 40px;
+      gap: 20px 40px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="cell cell-1">Cell 1</div>
+      <div class="cell cell-2">Cell 2</div>
+      <div class="cell cell-3">Cell 3</div>
+      <div class="cell cell-4">Cell 4</div>
+      <div class="cell cell-5">Cell 5</div>
+      <div class="cell cell-6">Cell 6</div>
+      <div class="cell cell-7">Cell 7</div>
+    </div>
+  </body>
+</html>
